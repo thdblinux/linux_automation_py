@@ -33,3 +33,37 @@ crontab -e
 - Linux references [Schedule Jobs with Cron](https://learning.lpi.org/en/learning-materials/102-500/107/107.2/107.2_01/)
 - Python references [os module](https://docs.python.org/3/library/os.html)
 - Python references [shutil module](https://docs.python.org/3/library/shutil.html)
+
+### Monitoramento de memoria, cpu e disco
+
+- `psutil.cpu_percent():` Retorna o uso atual da` CPU` como uma porcentagem.
+- `psutil.virtual_memory().percent:` Retorna o uso atual da` memória` como uma porcentagem.
+- `psutil.disk_usage('/'):` Retorna estatísticas de uso do `disco` para o diretório raiz.
+
+- Python references [psutil module](https://pypi.org/project/psutil/)
+- Python references [psutil module](https://psutil.readthedocs.io/en/latest/)
+  
+Para verificar os dados de uso de memoria, cpu e disco rode o ocomando abaixo para exibir os resultados.
+```sh
+python3 /usr/bin /home/ / /linux_automation_py/system_monitor.py   
+```
+### Gerenciamento de permissões de arquivos pyhton.
+
+- `file_path = 'backup_files':` Esta linha define o caminho do arquivo ou diretório cujas permissões serão alteradas. No caso já está definido como o diretório backup_files ('/backup_files') mais você alterar conforme a sua necessidade.
+
+- `mode = 0o755:` Esta linha define o novo modo de permissões para o arquivo ou diretório. No exemplo fornecido, o modo de permissões está definido como `755` no formato octal.
+
+- `change_permissions(file_path, mode):` Esta linha chama a função `change_permissions`, passando o caminho do arquivo ou diretório e o modo de permissões como argumentos para realizar a alteração de permissões.
+  
+Para aplicar a mudança de permissões nos arquivos definidos no script rode o comando abaixo.
+
+```sh
+python3 /usr/bin /home/ / /linux_automation_py/permissions.py
+```
+confira se as permissões foram aplicada no diretorio utiloizando o comando abaixo.
+```sh
+ls -la backup_files 
+```
+- Python references [os module](https://docs.python.org/3/library/os.html)
+- Python references [oschmod ](https://pypi.org/project/oschmod/)
+- Python references [Errors and Exceptions ](https://pypi.org/project/oschmod/)
