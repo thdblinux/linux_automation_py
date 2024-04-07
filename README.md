@@ -29,3 +29,6 @@ crontab -e
 - `*:` Este é um curinga e significa` "qualquer"` para o campo do dia do mês, permitindo que a tarefa seja executada em qualquer dia do mês.
 - `4: `Especifica o mês em que a tarefa será executada `(fevereiro)`.
 - `1-6:` Especifica o dia da semana em que a tarefa será executada `(segunda a sábado)`. O número `1` representa `segunda-feira` e o número `6` representa `sábado`.
+
+- Python references [os module](https://docs.python.org/3/library/os.html)
+- Python references [shutil module](https://docs.python.org/3/library/shutil.html)
