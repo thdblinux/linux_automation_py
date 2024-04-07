@@ -1,10 +1,15 @@
-### Utilize os seguintes comandos caso retorne algum erro na execução do script para alterar as permissões do script e executar o mesmo.
+### Utilize os seguintes comandos caso retorne algum erro na execução do script para alterar as permissões do script e executar o mesmo, modefique os diretorios para onde estão os seus arquivos python.
+
 
 ```sh
-chmod +x /home/thlinux/Documents/Projects/linux_automation_py/backup.py
+chmod +x /home/ / /linux_automation_py/backup.py
+```
+
+```sh
+ python3 /home/ / /linux_automation_py/backup.py
 ```
 ```sh
- python3 /home/thlinux/Documents/Projects/linux_automation_py/backup.py
+python3 /usr/bin /home/ / /linux_automation_py/backup.py   
 ```
 
 ### CRONTAB PARA AUTOMATIZAR O BACKUP DOS ARQUIVOS E DELETAR
